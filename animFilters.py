@@ -233,6 +233,17 @@ def adaptive_filter(raw_anim_curves, tolerance_value):
     
 
 def laplacian_filter(raw_anim_curves, factor, sigma):
+     """
+    Author: Sarah Phillips
+    Based on "The Cartoon Animation Filter" by Wang et al. 2006
+    Processes animation curves and introduces Exaggeration, Anticipation and Follow-Through 
+    args:
+        raw_anim_curves (dict): dict object containing keyframes of each animation curve 
+        factor (int): value that determines the strength of the filter
+        sigma (str): width of the filter
+    returns: Processed animation curve data 
+    rtype: dict
+    """
     if raw_anim_curves is None:
         cmds.headsUpMessage("No animation keys/curve selected! Select keys to filter, please!")
         cmds.warning("No animation keys/curve selected! Select keys to filter, please!")
