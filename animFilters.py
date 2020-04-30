@@ -380,7 +380,7 @@ def slow_in_slow_out(raw_anim_curves,skip, factor,controller,controllerState):
 
 
 def blendKeys(window, anim_curves):
-     """
+    """
     Author: Sarah Phillips
     Extends the selected animation curves before filtering 
     args:
@@ -917,7 +917,7 @@ class AnimFiltersUI(QtWidgets.QMainWindow):
 
 
         elif self.MainWindowUI.tabWidget.currentIndex() == 3:
-            self.animCurvesProcessed = laplacian_filter_static(unfiltered_curves, 
+            self.animCurvesProcessed = laplacian_filter(unfiltered_curves, 
                                                         self.MainWindowUI.factorSpinBox.value(),
                                                         self.MainWindowUI.sigmaSpinBox.value())
         elif self.MainWindowUI.tabWidget.currentIndex() == 4:
