@@ -80,7 +80,7 @@ numpy-1.13.1+mkl-cp27-none-win_amd64.whl
 
 After downloading the files, you can simply unzip them to the site-packages folder inside your Maya installation.
 Typically "c:\Program Files\Autodesk\Maya20xx\Python\Lib\site-packages" on Windows.
-On a Mac, it is recommending to install these packages using "pip".
+On a Mac, it is recommended to install these packages using "pip".
 
 Official guide for installing packages: https://packaging.python.org/tutorials/installing-packages/
 
